@@ -3,6 +3,7 @@ module.exports = function(controller) {
         var email = message.user;
         var CiscoSpark = require('node-ciscospark');
         var async = require('async');
+        var spark = new CiscoSpark(process.env.SPARK_TOKEN);
 
         var spaceSeperator = " ";
         var comaSeperator = ",";
