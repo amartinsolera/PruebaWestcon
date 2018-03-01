@@ -7,6 +7,7 @@ module.exports = function (controller) {
         var text = "Here are my skills:";
         text += "\n- " + bot.enrichCommand(message, ".commons") + ": shows metadata about myself";
         text += "\n- " + bot.enrichCommand(message, "help") + ": spreads the word about my skills";
+        text += "\n- " + bot.enrichCommand(message, "espacio") + ": I clone the room that you choose with the same people";
         bot.reply(message, text);
     });
 }
